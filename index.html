@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +25,7 @@
         <ul>
             <li><a href="#sustratos">Sustratos</a></li>
             <li><a href="#h2_concejos">Concejos</a></li>
-            <li><a href="#">Propiedades</a></li>
+            <li><a href="#articulo4">Propiedades</a></li>
         </ul>
     </nav>
     <main>
@@ -96,9 +97,10 @@
                                 <div class="fm">
                                 <h2> Como comprar </h2>
                                 <p> </br>para adquirir productos de flor morada se puede hacer las solicitudes via telefonica, en el correo comercial o la compra asistida en el punto de fabricacion, el pago se puede realizar en los canales ofrecido en la pagina web</p>
+                                <img id="tienda" src="IMAGENES/tienda.png" alt="imagen de carrito de compras"/>
                             </div>
         
-                            <img id="tienda" src="IMAGENES/tienda.png" alt="imagen de carrito de compras"/>
+                            
                             </div>              
                                
                 </article>
@@ -108,50 +110,96 @@
 
                     <div id="caja_botones">
                         
-                    <button type="button" class="botones">Permitir la respiracion de las raices</button>
-                    <button type="button" class="botones">Fertilizar regularmente</button>
-                    <button type="button" class="botones">Macetas del tamaño adecuado</button>
+                    <button type="button" class="botones" id="btn_respirar">Permitir la respiracion de las raices</button>
+                    <button type="button" class="botones" id="btn_fertilizar">Fertilizar regularmente</button>
+                    <button type="button" class="botones" id="btn_macetas">Macetas del tamaño adecuado</button>
 
                      </div>
-                     <div id=figuras_concejos>
+                     <div id="figuras_concejos">
                     <figure class="concejo1">
                         <img src="IMAGENES/MACETA.png" alt="imagen de raices en la maceta" class="raiz">
                         <figcaption>
-                           <h3>facilitar el intercambio de aire</h3> 
+                           <h3>Respiracion de las raices</h3> 
                            <p> es importante dejar el sustrato suelto, no compactarlo, 
                                 Colocar piedras grandes o arlita en el fondo
                                 usar sustratos suelto</p>
                         </figcaption>
                     </figure>
-                    <figure class="concejo1">
+                    <div class="concejo2" id="concejo2">
                             <img src="IMAGENES/MACETA.png" alt="imagen de raices en la maceta" class="raiz">
                             <figcaption>
-                               <h3>facilitar el intercambio de aire</h3> 
-                               <p> es importante dejar el sustrato suelto, no compactarlo, 
-                                    Colocar piedras grandes o arlita en el fondo
-                                    usar sustratos suelto</p>
+                               <h3>Fertilizar regularmente</h3> 
+                               <p> Se debe aportar los nutrientes que la planta necesita,
+                                   en la cantidad justa, para evitar salinizar el sustrato,
+                                   ademas si es granulado, se deben enterrar para mejorar 
+                                   su fijacion, no olvidar aportar calcio y magnesio, con 
+                                   cal agricola y sal de edson</p>
+                                   
                             </figcaption>
-                        </figure>
-                        <figure class="concejo1">
+                    </div>
+                        <figure class="concejo3" id="concejo3">
                                 <img src="IMAGENES/MACETA.png" alt="imagen de raices en la maceta" class="raiz">
                                 <figcaption>
-                                   <h3>facilitar el intercambio de aire</h3> 
-                                   <p> es importante dejar el sustrato suelto, no compactarlo, 
-                                        Colocar piedras grandes o arlita en el fondo
-                                        usar sustratos suelto</p>
+                                   <h3>macetas del tamaño adecuado</h3> 
+                                   <p> Una maceta muy grande, genera acumulacion de agua en el 
+                                       sustrato y una muy pequeña falta de espacio para el desarrollo
+                                       de las raices, por eso es importante que este recipiente
+                                       sea del tamaño justo para cada planta.</p>
+                                       
                                 </figcaption>
                             </figure>
                     </div>
                 </article>
-                <article> concejo2
+           
+            <h2 >Propiedades</h2>
+                <article id="articulo4"> 
+                    <table border="1">
+                        <caption> Propiedades quimicas sustrato para orquideas</caption>
+                        <thead>
+                            <tr>
+                            <th> Parametro </th>
+                            <th> Valor </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>pH</td>
+                            <td>5.5</td>
+                        </tr>
+                        <tr>
+                                <td>CE</td>
+                                <td>2.1</td>
+                        </tr>
+                        <tr>
+                                <td>pW%</td>
+                                <td>3.8</td>
+                        </tr>
+                        <tr>
+                                <td>pS%</td>
+                                <td>169.1</td>
+                        </tr>
+                        <tr>
+                                <td>%CO</td>
+                                <td>13.39</td>
+                        </tr>
+                        <tr>
+                                <td>%MO</td>
+                                <td>23.03</td>
+                        </tr>
+                        <tr>
+                                <td>CIC</td>
+                                <td>15</td>
+                        </tr>
+                        <tr>
+                                <td>CICe</td>
+                                <td>6.7</td>
+                        </tr>
+                        </tbody>
 
-
-
+                    </table>
 
                 </article>
-            <h2>Propiedades</h2>
-                <article> fisicas</article>
-                <article> quimicas </article>
+                
         </section>
 
     </main>
@@ -180,7 +228,7 @@
 
         <h3 id="title-popup">Suscribete</h3> 
         <h4>Recibe un boletin mensual en tu correo</h4>       
-        <form  id="formato1" action="">
+        <form  id="formato1" action="prueba.php">
             <div id="input-container">
             <input type="text" placeholder="Nombre">
             <input type="text" placeholder="Correo electronico">
@@ -192,9 +240,7 @@
 
         </div>
     </div>
-
-
-
+    
 
     <script src="https://kit.fontawesome.com/2777c5dd35.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
